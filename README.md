@@ -1,31 +1,38 @@
-# Paper Cleaner
+# Paper Cleanup
 
-This repo organizes several useful tools which I use to prepare my papers for submission to arXiv and *ACL conferences.
+This repo organizes a workflow for cleaning LaTex for paper submissions to arXiv and *ACL conferences.
 
 ## Tools
 
-- [Rebiber](https://github.com/yuchenlin/rebiber): Replaces citations to arXiv papers with their published versions, if they exists.
+- [Rebiber](https://github.com/yuchenlin/rebiber): Replaces citations to arXiv papers with their published versions if they exist.
 - [arXiv LaTex Cleaner](https://github.com/google-research/arxiv-latex-cleaner): Clean the LaTex code of a paper before submission to arXiv.
 - [ACL Pubcheck](https://github.com/acl-org/aclpubcheck/blob/main/aclpubcheck_additional_info.pdf): Automatically detects font errors, author formatting errors, margin violations as well as many other common formatting errors in papers that are using the LaTeX sty file associated with ACL venues.
 
 ## Usage
 
-First, make sure to create and activate a virtual enviornment. My preffered way to do this is with [`pyenv-virtualenv`](https://github.com/pyenv/pyenv-virtualenv), e.g.
+First, make sure to create and activate a virtual environment. My preferred way to do this is with [`pyenv-virtualenv`](https://github.com/pyenv/pyenv-virtualenv), e.g.
 
 ```bash
-pyenv virtualenv 3.8.13 paper-cleaner
+pyenv virtualenv 3.8.13 paper-cleanup
+```
+
+Then, clone and `cd` into the repo
+
+```bash
+git clone "https://github.com/JohnGiorgi/paper-cleanup.git"
+cd paper-cleanup
 ```
 
 First, run `setup.sh`, which will install the tools (or update them if they are already installed)
 
 ```bash
-./setup.sh  # or bash setup.sh
+./scripts/setup.sh  # or bash scripts/setup.sh
 ```
 
 Then, you can run all tools using the `clean.sh` script:
 
 ```bash
-./clean.sh "path/to/latex" "name_of_bib_file"  # or bash clean.sh "path/to/latex" "name_of_bib_file"
+./scripts/clean.sh "path/to/latex" "name_of_bib_file"  # or bash scripts/clean.sh "path/to/latex" "name_of_bib_file"
 ```
 
 Your cleaned paper and bib file will be saved to `"path/to/latex_arxiv"`. Be sure to check the logs for errors. If you additionally want to run `aclpubcheck`, convert your paper to a PDF and run:
