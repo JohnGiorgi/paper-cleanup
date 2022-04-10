@@ -1,6 +1,6 @@
-# Paper Cleanup
+# Paper Cleaner
 
-This repo organizes several useful tools which I use to prepare my papers for submission to arXiv and ACL conferences.
+This repo organizes several useful tools which I use to prepare my papers for submission to arXiv and *ACL conferences.
 
 ## Tools
 
