@@ -38,7 +38,7 @@ Then, you can run all tools using the `clean.sh` script:
 Your cleaned paper and bib file will be saved to `"path/to/latex_arxiv"`. Be sure to check the logs for errors. If you additionally want to run `aclpubcheck`, convert your paper to a PDF and run:
 
 ```bash
-python aclpubcheck/formatchecker.py --paper_type PAPER_TYPE PAPER_NAME.pdf
+python aclpubcheck/formatchecker.py --paper_type [long|short|other] path/to/paper.pdf
 ```
 
 ## Notes, tips and tricks
