@@ -2,6 +2,8 @@
 
 This repo organizes a workflow for cleaning LaTeX for paper submissions to arXiv and *ACL conferences.
 
+> This is mainly meant for personal use but feel free to use it if you find it helpful!
+
 ## :hammer_and_wrench: Tools
 
 - [Rebiber](https://github.com/yuchenlin/rebiber): Replaces citations to arXiv papers with their published versions if they exist.
@@ -23,7 +25,7 @@ git clone "https://github.com/JohnGiorgi/paper-cleanup.git"
 cd paper-cleanup
 ```
 
-First, run `setup.sh`, which will install the tools (or update them if they are already installed)
+Next, run `setup.sh`, which will install the tools (or update them if they are already installed)
 
 ```bash
 ./scripts/setup.sh  # or bash scripts/setup.sh
