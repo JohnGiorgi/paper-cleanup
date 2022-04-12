@@ -1,14 +1,14 @@
-# Paper Cleanup
+# :scroll: Paper Cleanup
 
-This repo organizes a workflow for cleaning LaTex for paper submissions to arXiv and *ACL conferences.
+This repo organizes a workflow for cleaning LaTeX for paper submissions to arXiv and *ACL conferences.
 
-## Tools
+## :hammer_and_wrench: Tools
 
 - [Rebiber](https://github.com/yuchenlin/rebiber): Replaces citations to arXiv papers with their published versions if they exist.
-- [arXiv LaTex Cleaner](https://github.com/google-research/arxiv-latex-cleaner): Clean the LaTex code of a paper before submission to arXiv.
+- [arXiv LaTeX Cleaner](https://github.com/google-research/arxiv-latex-cleaner): Clean the LaTeX code of a paper before submission to arXiv.
 - [ACL Pubcheck](https://github.com/acl-org/aclpubcheck/blob/main/aclpubcheck_additional_info.pdf): Automatically detects font errors, author formatting errors, margin violations as well as many other common formatting errors in papers that are using the LaTeX sty file associated with ACL venues.
 
-## Usage
+## :arrow_forward: Usage
 
 First, make sure to create and activate a virtual environment. My preferred way to do this is with [`pyenv-virtualenv`](https://github.com/pyenv/pyenv-virtualenv), e.g.
 
@@ -41,6 +41,6 @@ Your cleaned paper and bib file will be saved to `"path/to/latex_arxiv"`. Be sur
 python aclpubcheck/formatchecker.py --paper_type [long|short|other] path/to/paper.pdf
 ```
 
-## Notes, tips and tricks
+## :memo: Notes, tips and tricks
 
 - arXiv requires that the `.bbl` file is provided and has the same name as the main `.tex` file. You can get this file on Overleaf from under "Logs and output files" > "Other logs and files".
