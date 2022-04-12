@@ -1,11 +1,11 @@
 # Paper Cleanup
 
-This repo organizes a workflow for cleaning LaTex for paper submissions to arXiv and *ACL conferences.
+This repo organizes a workflow for cleaning LaTeX for paper submissions to arXiv and *ACL conferences.
 
 ## Tools
 
 - [Rebiber](https://github.com/yuchenlin/rebiber): Replaces citations to arXiv papers with their published versions if they exist.
-- [arXiv LaTex Cleaner](https://github.com/google-research/arxiv-latex-cleaner): Clean the LaTex code of a paper before submission to arXiv.
+- [arXiv LaTeX Cleaner](https://github.com/google-research/arxiv-latex-cleaner): Clean the LaTeX code of a paper before submission to arXiv.
 - [ACL Pubcheck](https://github.com/acl-org/aclpubcheck/blob/main/aclpubcheck_additional_info.pdf): Automatically detects font errors, author formatting errors, margin violations as well as many other common formatting errors in papers that are using the LaTeX sty file associated with ACL venues.
 
 ## Usage
