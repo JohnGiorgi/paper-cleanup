@@ -46,3 +46,4 @@ python ./aclpubcheck/aclpubcheck/formatchecker.py --paper_type [long|short|other
 ## :memo: Notes, tips and tricks
 
 - arXiv requires that the `.bbl` file is provided and has the same name as the main `.tex` file. You can get this file on Overleaf from under "Logs and output files" > "Other logs and files".
+- To auto-format your `.bib` file, try [`bibtex-tidy`](https://flamingtempura.github.io/bibtex-tidy).
