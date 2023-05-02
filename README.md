@@ -34,10 +34,10 @@ Next, run `setup.sh`, which will install the tools (or update them if they are a
 Then, you can run all tools using the `clean.sh` script:
 
 ```bash
-./scripts/clean.sh "path/to/latex" "name_of_bib_file"  # or bash scripts/clean.sh "path/to/latex" "name_of_bib_file"
+./scripts/clean.sh "path/to/latex/directory" "name_of_bib_file"  # or bash scripts/clean.sh "path/to/latex" "name_of_bib_file"
 ```
 
-Your cleaned paper and bib file will be saved to `"path/to/latex_arxiv"`. Be sure to check the logs for errors. If you additionally want to run `aclpubcheck`, convert your paper to a PDF and run:
+Your cleaned paper and bib file will be saved to `"path/to/latex/directory_arxiv"`. Be sure to check the logs for errors. If you additionally want to run `aclpubcheck`, convert your paper to a PDF and run:
 
 ```bash
 python ./aclpubcheck/aclpubcheck/formatchecker.py --paper_type [long|short|other] path/to/paper.pdf
@@ -45,5 +45,6 @@ python ./aclpubcheck/aclpubcheck/formatchecker.py --paper_type [long|short|other
 
 ## :memo: Notes, tips and tricks
 
-- arXiv requires that the `.bbl` file is provided and has the same name as the main `.tex` file. You can get this file on Overleaf from under "Logs and output files" > "Other logs and files".
+- arXiv requires that the `.bbl` file is provided and has the same name as the main `.tex` file.
+- If you are using Overleaf, you can download all necessary files for submission to arXiv by selecting "Submit > Submit your paper to the arXiv". Unzip this file and clean it with [`./scripts/clean.sh`](./scripts/clean.sh), then zip it back up and upload it to arXiv.
 - To auto-format your `.bib` file, try [`bibtex-tidy`](https://flamingtempura.github.io/bibtex-tidy).
